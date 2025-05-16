@@ -29,6 +29,10 @@ public class OrderItem {
 		this.price = price;
 	}
 
+	public Double getSubTotal() {
+		return qunatity*price;
+	}
+	
 	public Integer getQunatity() {
 		return qunatity;
 	}
@@ -78,6 +82,5 @@ public class OrderItem {
 		OrderItem other = (OrderItem) obj;
 		return Objects.equals(id, other.id);
 	}
-	
 	
 }
