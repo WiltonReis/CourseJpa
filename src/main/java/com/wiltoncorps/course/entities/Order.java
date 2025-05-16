@@ -57,7 +57,7 @@ public class Order implements Serializable{
 	public Double getTotal() {
 		double total = 0;
 		for(OrderItem oi : items) {
-			total += oi.subTotal();
+			total += oi.getSubTotal();
 		}
 		return total;
 	}
